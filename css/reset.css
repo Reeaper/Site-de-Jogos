@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* var(--cor-fundo); */
+    --branco: #FFFFFF;
+    --cinza: #304053;
+    --azul-nav: #202633;
+    --cimento: #93A7BA;
+    --azul-card:#202633;
+    --azul-busca: #4D6585;
+    --borda-trans:#D9D9D9;
+}
+h1, .top{
+    font-family: Rubik glitch;
+    cursor: pointer;
+}
+h2, h3, h4, p, a{
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+
+}
+a, p, .categ, .surpresa{
+    color: var(--branco);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+input {
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--branco);
+}
+input::placeholder{
+    color: var(--branco); 
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.top-nav{
+    opacity: 77%;
+}
+.top-nav-log{
+    opacity: 77%;   
+}
+main{
+    background-image: url(background/swords.png),
+    url(background/nebulosa.png);
+    width: 1227px;
+    height: 804px;
+}
+
+.ini-secao{
+    width: 100%;
+}
+
+

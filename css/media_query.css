@@ -1,0 +1,2360 @@
+/* media query para laptop */
+@media(min-width:427px) and (max-width:1024px){
+    /* Estilos gerais */
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container--geral {
+    max-width: 100%;
+}
+
+
+/* Cabeçalho */
+
+header {
+    background-color: var(--cinza);
+    opacity: 80%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 64rem;
+    height: 7.5rem;
+}
+/* titulo inicio */
+.titulo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18.75rem;
+    word-spacing: 1.25rem;
+}
+
+.titulo h1 {
+    height: 64px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    opacity: 90%;
+    font-size: 3.125rem;
+    text-shadow: 4px 4px 0px rgba( 77, 101, 133, 0.6), 0px 0px 0px var(--branco), 
+    5px 6px 0px rgba( 32, 38, 51, 1);
+}
+/* titulo fim */
+
+/* login inicio */
+.login {
+    width: 50%;
+    display: flex;
+    font-size: .9375rem;
+    gap: .625rem;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 4.0625rem;
+}
+.login i{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.login a {
+    color: #fff;
+    text-decoration: none;
+}
+/* login fim */
+
+/* Main inicio*/
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+/* Navegação incio */
+.top-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+    padding: .625rem 0;
+    background-color: var(--azul-nav);
+    opacity: 77%;
+    width: 50.6875rem;
+    height: 2.6875rem;
+}
+.top-nav-log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+    padding: .625rem 0;
+    background-color: var(--azul-nav);
+    opacity: 77%;
+    width: 100%;
+    height: 2.6875rem;  
+}
+
+.top {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    font-size: 1.5rem;
+    text-shadow: 1.3008px 2px 0px rgba( 77, 101, 133, 0.9), 0px 0px 0px var(--branco), 2px 6px 0px rgba( 32, 38, 51);
+}
+
+.top-nav a {
+    color: var(--branco);
+    text-decoration: none;
+    padding: .3125rem .625rem;
+}
+/* navegação fim */
+
+/* pagina de login inicio */
+.ini-secao{
+    width: 100%;
+    height: 100vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    border: .0625rem solid var(--azul-busca);
+    width: 50rem;
+    height: 25rem;
+    padding: 1.25rem;
+    border-radius: .625rem;
+    background-color: var(--azul-busca);
+    margin: auto;
+    margin-top: 0;
+    gap: .625rem;
+    align-items: center;
+}
+.ini{
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    color: var(--branco);
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: auto;
+    margin-bottom: 3.125rem;
+    width: 100%;
+    position: relative;
+    left: 20.625rem;
+}
+form label{
+    font-size: 1.875rem;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    color: var(--branco);
+    font-weight: 700;
+}
+form input{
+    width: 100%;
+    background-color: rgba(48, 64, 83, .55);
+    height: 2.5rem;
+    padding: 0 .625rem;
+    font-size: 1.5rem;
+}
+form button{
+    width: 16.875rem;
+    height: 3.125rem;
+    margin: 1.25rem auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    border-radius: .6875rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: rgba(132, 159, 194, 0.411);
+    color: var(--branco);
+}
+form a{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: .9375rem;
+}
+/* pagina de login fim */
+
+
+/* Seção de Categorias de Jogos inicio */
+/* pagina inicio */
+.categ--games {
+    display: flex;
+    width: 45rem;
+    overflow-y: scroll;
+    height: 90vh;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: .625rem;
+}
+
+.categ--games .indie,
+.categ--games .rpg,
+.categ--games .fps,
+.categ--games .moba {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: .625rem;
+    margin: 1.875rem;
+    text-align: center;
+    /* padding: 1.25rem; */
+    width: 17.625rem;
+    height: 20rem;
+    transition: 0.5s;
+}
+
+/* categ--games gradiente inicio */
+.categ--games div:nth-child(1) {
+    background: linear-gradient(var(--azul-nav)60%, rgba(148, 0, 211, 100));
+}
+
+.categ--games div:nth-child(2) {
+    background: linear-gradient(var(--azul-nav)60%, rgba(250, 10, 0, 100));
+}
+
+.categ--games div:nth-child(3) {
+    background: linear-gradient(var(--azul-nav)60%, rgba(39, 154, 0, 100));
+}
+
+.categ--games div:nth-child(4) {
+    background: linear-gradient(var(--azul-nav)60%, rgba(218, 165, 32, 100));
+}
+/* categ--games gradiente fim */
+
+.categ--games h3:nth-child(1),
+.categ--games h3:nth-child(2),
+.categ--games h3:nth-child(3),
+.categ--games h3:nth-child(4) {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* categ--games :hover inicio */
+.categ--games .indie:hover,
+.categ--games .rpg:hover,
+.categ--games .fps:hover,
+.categ--games .moba:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+/* categ--games :hover fim */
+.categ--games img {
+    object-fit: cover;
+    width: 15.125rem;
+}
+/* Seção de Categorias de Jogos fim */
+
+/* pagina categorias inicio */
+
+/* grid categorias inicio */
+.container--grid--categ{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    width: 75%;
+    height: 47.5rem;
+    justify-items:center;
+    border-radius: .625rem;
+    color: var(--branco);
+    padding: 1.25rem;
+}
+/* divs incio*/
+.titulo--botao{
+    display: flex;
+    margin-top: 1.25rem;
+    margin-bottom: .625rem;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.titulo--botao h2{
+    display: flex;
+    border: .0625rem solid rgba(48, 64, 83, .66);
+    width: fit-content;
+    padding: 0 .625rem 0 .625rem;
+    height: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .625rem;
+    border-radius: .625rem;
+    background-color: rgba(48, 64, 83, .70);
+}
+.ver{
+    display: flex;
+    border: .0625rem solid rgba(48, 64, 83, .65);
+    background-color: rgba(48, 64, 83, .70);
+    text-align: center;
+    width: 4.0625rem;
+    height: fit-content;
+    padding: .3125rem 0 .3125rem 0;
+    border-radius: .625rem;
+}
+.mais .game,
+.lanca .game,
+.breve .game{
+    display: flex;
+    width: 43.75rem;
+    height: 7.125rem;
+    object-fit: cover;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: .9375rem 0 0 .9375rem;
+    margin-right: .625rem;
+    gap: 2.1875rem;
+    background-color: rgba(48, 64, 83, 0.7);
+}
+
+.text{
+    display: flex;    
+    flex-direction: column;
+    padding-left: .625rem;
+}
+.game img{
+    object-fit: cover;
+    width: 5rem;
+    height: 100%;
+    border-radius: .625rem;
+}
+
+.mais-vendidos,
+.lancamentos,
+.em-breve{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.mais,
+.breve,
+.lanca{
+    width: 22.8125rem;
+    height: 35.625rem;
+}
+/* divs fim */
+/* grid categorias fim */
+/* pagina categorias fim */
+
+/* pagina de comunidade inicio */
+/* barra de navegaçao comunidade incio */
+#barra-navegacao{
+    margin: 1.25rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5625rem;
+    border: .0625rem solid var(--azul-card);
+    background-color: rgba(48, 64, 83, 0.7);
+    height: 2.5rem;
+    align-items: center;
+    border-radius: .625rem;
+}
+.nav-bar-comu:nth-child(1){
+    display: flex;
+    border: .0625rem solid var(--azul-card);
+    background-color:rgba(48, 64, 83, .44) ;
+    border-radius: 10px 0 0 10px;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-collapse: separate;
+    padding: 0 .625rem 0 .625rem;
+}
+.nav-bar-comu:nth-child(2){
+    display: flex;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 .625rem 0 .625rem;
+}
+.nav-bar-comu:nth-child(3){
+    display: flex;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 .625rem 0 .625rem;
+}
+.nav-bar-comu:nth-child(4){
+    display: flex;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 .625rem 0 .625rem;
+}
+.nav-bar-comu:nth-child(5){
+    display: flex;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 .625rem 0 .625rem;
+}
+/* barra de navegaçao comunidade fim */
+
+/* galeria comunidade inicio */
+
+/* CONTAINERS COMU INICIO */
+.display-comu{
+    background-color: rgba(48, 64, 83, .90);
+    width: 43.75rem;
+    height: 39.375rem;
+    display: flex;
+    color: var(--branco);
+    margin: 3.125rem auto 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    overflow-y: scroll;
+}
+.display-comu::-webkit-scrollbar {
+     width: 0 !important 
+}
+
+.card-comu img{
+    width: 3.125rem;
+    height: 3.125rem;
+}
+.comu-content{
+    display: flex;
+}
+/* CONTAINERS COMU FIM */
+
+/* FILHO UM INICIO */
+.card-comu:nth-child(1){
+    background-color: rgba(48, 64, 83, .99);
+    margin: .625rem .3125rem;
+    display: flex;
+    width: 31.25rem;
+    height: 9.375rem;
+    flex-direction: column;
+    padding: .3125rem .625rem;
+    justify-content: center;
+    gap: .625rem;
+    position: relative;
+    left: -0.3125rem;
+}
+/* FILHO UM FIM */
+
+/* FILHO DOIS INICIO */
+.card-comu:nth-child(2){
+    background-color: rgba(48, 64, 83, .99);
+    margin: .625rem .625rem;
+    gap: .625rem;
+    display: flex;
+    flex-direction: column;
+    width: 610px;
+    object-fit: cover;
+    position: relative;
+}
+.card-comu:nth-child(2) .print{
+    visibility: hidden;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 999;
+    backdrop-filter: blur(15px);
+    transition: .5s;
+}
+.card-comu:nth-child(2):hover .print{
+    transition: .5s;
+    visibility: visible;
+    opacity: 1;
+    
+}
+.card-comu:nth-child(2) img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: .625rem .625rem;
+    object-fit: cover;
+}
+/* FILHO DOIS FIM */
+
+/* FILHO TRES INICIO */
+.card-comu:nth-child(3){
+    margin: 0 .625rem;
+    background-color: rgba(48, 64, 83, .99);
+    display: flex;
+    width: 31.25rem;
+    height: 16.875rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    top: .3125rem;
+    left: -0.3125rem;
+    padding: 0 .625rem;
+}
+.card-comu:nth-child(3) h4:nth-child(1){
+    background-color: var(--azul-nav);
+    padding: .625rem .625rem;
+    display: flex;
+    align-items: flex-end;
+    gap: .9375rem;
+    font-size: 1rem;
+}
+/* FILHO TRES FIM */
+
+/* FILHO QUATRO INICIO */
+.card-comu:nth-child(4){
+    background-color: rgba(48, 64, 83, .99);
+    position: relative;
+    margin: 0 .625rem;
+    gap: .625rem;
+    display: flex;
+    flex-direction: column;
+    width: 40.625rem;
+    height: 18.75rem;
+    object-fit: cover;
+    top: 1.875rem;
+}
+.card-comu:nth-child(4) img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: .625rem .625rem;
+}
+.card-comu:nth-child(4) .print{
+    visibility: hidden;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 999;
+    backdrop-filter: blur(15px);
+    transition: .5s;
+}
+.card-comu:nth-child(4):hover .print{
+    transition: .5s;
+    visibility: visible;
+    opacity: 1;
+}
+/* FILHO QUATRO FIM */
+
+/* FILHO CINCO INICIO */
+.card-comu:nth-child(5){
+    position: relative;
+    background-color: rgba(48, 64, 83, .99);
+    margin: .625rem .625rem;
+    display: flex;
+    width: 31.25rem;
+    height: 9.375rem;
+    flex-direction: column;
+    padding: .3125rem .625rem;
+    justify-content: center;
+    gap: .625rem;
+    top: 1.875rem;
+    left: .625rem;
+}
+/* FILHO CINCO FIM */
+/* galeria comunidade fim */
+/* pagina de comunidade fim */
+
+/* pagina de suporte inicio */
+/* superior pesquisa inicio */
+.help{
+    width: 70%;
+    height: 6.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3.75rem 0 3.75rem 3.75rem;
+}
+.help h2{
+    color: var(--branco);
+    font-size: 30px;
+}
+.search--help{
+    width: 34.375rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 10px;
+    border: 1px solid var(--azul-busca);
+    background-color: rgba(40, 52, 66, 0.55);
+    border-radius: .625rem;
+}
+#busca--sup{
+    font-size: 1.25rem;
+    font-weight: 700;
+    width: 31.25rem;
+}
+.search--help i{
+    display: flex;
+    width: 3.3125rem;
+    padding: 0;
+    height: 2.5rem;
+    background-color: var(--azul-busca);
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 .625rem .625rem 0;
+}
+/* superior pesquisa fim */
+
+/* sessoes inicio */
+.sup{
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    overflow-y: scroll;
+    justify-content: center;
+}
+.sup h2{
+    color: var(--branco);
+    margin: 0 0 3.75rem 0;
+    font-size: 2rem;
+}
+.btn--secao{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 31.25rem;
+    height: 15.4375rem;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+.secao a{
+    border: .0625rem solid var(--borda-trans);
+    background-color: var(--azul-busca);
+    gap: .625rem;
+    display: flex;
+    width: 30rem;
+    height: 3.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: .625rem;
+    margin-bottom: 1.25rem;
+    color: var(--branco);
+}
+
+/* sessoes fim */
+/* pagina de suporte fim */
+
+/* Barra Lateral inicio */
+aside {
+    width: 13.3125rem;
+    height: 50.25rem;
+    background-color: var(--cinza);
+    opacity: 75%;
+    color: var(--branco);
+    padding: .625rem;
+}
+
+aside a {
+    color: var(--branco);
+    text-decoration: none;
+    display: block;
+    margin: .625rem 0;
+}
+
+/*formataçao texto aside inicio*/
+
+.car a,
+.lista a,
+.surpresa h2,
+.categ,
+.categ h2,
+.categ a,
+.download h2 {
+    font-size: 1rem;
+    text-align: end;
+}
+/* formatação texto aside fim */
+
+/*pesquisa inicio*/
+
+.search {
+    display: flex;
+    background-color: var(--azul-busca);
+    align-items: center;
+    width: 12rem;
+    height: 1.875rem;
+    border-radius: .625rem;
+    color: var(--branco);
+    padding: .3125rem .625rem;
+}
+
+/* input inicio */
+#pesquisa-loja {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--branco);
+    font-size: .9375rem;
+}
+/* input fim */
+.search img {
+    width: 100%;
+    height: 100%;
+}
+/* pesquisa fim */
+
+/*carrinho incio*/
+
+.car {
+    gap: .3125rem;
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    margin: 3.4375rem 1.25rem .9375rem 0;
+    width: 100%;
+    height: 1.875rem;
+}
+/* carrinho fim */
+
+/*lista de desejos inicio*/
+
+.lista {
+    gap: .3125rem;
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    margin: 0 1.25rem .9375rem 0;
+    width: 100%;
+}
+/* lista de desejos fim */
+
+/*Surpreenda-me inicio*/
+.surpresa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+}
+
+/* botão inicio */
+.btn--random {
+    margin: .3125rem 0 .9375rem 0;
+    border: 1px solid var(--azul-card);
+    background-color: var(--azul-card);
+}
+.btn--random,
+.btn--random a {
+    padding-left: .3125rem;
+    display: flex;
+    gap: .3125rem;
+    font-size: .3125rem;
+    border-radius: .6875rem;
+    align-items: center;
+    width: 6.875rem;
+    height: 1.5625rem;
+    justify-content: center;
+}
+/* botão fim */
+/* surpreenda-me fim */
+
+/*categorias inicio*/
+.categ {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: .9375rem 0 0 0;
+    width: 100%;
+}
+
+.link--categ {
+    margin: 0 0 .9375rem 0;
+}
+/* categorias fim */
+
+/*Conquistas inicio*/
+.conq {
+    display: flex;
+    justify-content: end;
+    gap: .3125rem;
+    margin: 0 0 .9375rem 0;
+}
+.conq img {
+    align-self: flex-end;
+    width: .9375rem;
+    height: .9375rem;
+}
+/* conquistas fim */
+
+/*Download inicio*/
+.download {
+    display: flex;
+    flex-direction: column;
+    width: 12.5rem;
+    height: 3.75rem;
+    align-items: flex-end;
+}
+.download h2 {
+    margin: 0 .625rem 0 0;
+    text-align: center;
+}
+/* Dowload fim */
+/* main fim */
+
+
+/* Rodapé inicio*/
+footer {
+    display: flex;
+    background-color: var(--cimento);
+    font-family: 'Bebas Neue', sans-serif;
+    padding: .625rem 0;
+    width: 90rem;
+    height: 6.25rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.footer--link {
+    list-style: none;
+    display: table-footer-group;
+    width: 63.375rem;
+    height: 3rem;
+    font-size: 1.0313rem;
+    text-align: center;
+}
+.direitos:link,
+.direitos:visited {
+    color: #000;
+}
+.direitos:hover {
+    transition: .5s ease-in-out;
+    opacity: 0.5;
+}
+/* Rodapé fim */
+}
+
+
+/* Media query para telas grandes index */
+@media (min-width: 426px) and (max-width: 768px){
+    /* container */
+    .container--geral{
+        max-width: 100%;
+    }
+
+    /* cabeçalho */
+    header {
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+
+/* titulo */
+    .titulo {
+        margin-left: 0;
+        text-align: center;
+    }
+    .titulo h1{
+        font-size: 1.625rem;
+        text-shadow: 3px 2px 0px rgba( 77, 101, 133, 0.6), 
+        0px 0px 0px var(--branco),
+        4px 6px 0px rgba( 32, 38, 51, 1);
+    }
+
+/* login */
+    .login {
+        width: 100%;
+        margin-right: 0;
+        justify-content: center;
+    }
+    /* barras de navegação */
+/* clicavel inicio*/
+#menu{
+    display: flex;
+    margin: 1.25rem 0 1.25rem 0;
+}
+/* clicavel comunidade inicio */
+#comu--nav{
+    display: flex;
+    width: 100%;
+    margin-top: 1.25rem;
+    justify-content: center;
+}
+/* clicavel comunidade fim */
+
+#barra-navegacao{
+    height: 60vh;
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 999;
+}
+.overlay{
+    position: absolute;
+    top: 1;
+    overflow: hidden;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.336);
+backdrop-filter: blur(5px);
+}
+/* clicavel fim */
+.top-nav {
+display: none;
+flex-direction: column;
+z-index: 999;
+width: 100%;
+height: 50vh;
+position: static;
+padding: 1rem;
+}
+
+.nav-bar-comu:nth-child(1){
+width: 100%;
+border-radius: .625rem;
+}
+/* barras de navegação fim */
+/* main */
+main {
+width: 100%;
+height: 100vh;
+background-image: url(background/swords.png),
+url(background/nebulosa.png);
+}
+/* pagina de login inicio */
+.ini-secao{
+    width: 100%;
+    height: 100vh;
+}
+.top-nav-log{
+display: none;
+flex-direction: column;
+z-index: 999;
+width: 100%;
+height: 50vh;
+position: static;
+padding: 1rem;
+}
+.ini-secao h1{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-variant-caps: all-petite-caps;
+    position: static;
+}
+form{
+width: 15.625rem;
+margin-top: 1.25rem;
+}
+.ini-secao 
+form button,
+form label,
+form a{
+width: 13.125rem;
+margin: 0 auto;
+font-weight: 400;
+}
+/* pagina de login fim */
+
+/* pagina de inicio */
+.categ--games {
+    display: flex;
+    overflow-y: scroll;
+    height: 90vh;
+    width: 750px;
+    margin: 0;
+    padding: .625rem;
+    justify-items: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.categ--games img{
+    object-fit: cover;
+    width: 15.625rem;
+}
+.categ--games .indie,
+.categ--games .rpg,
+.categ--games .fps,
+.categ--games .moba{
+    display: flex;
+    padding: .625rem .625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem .9375rem .625rem .9375rem;
+    width: 18.75rem;
+    height: 18.75rem;
+}
+/* pagina de inicio fim */
+
+/* pagina categoria de jogos */
+.container--grid--categ{        
+grid-template-columns: 1fr;
+width: 100%;
+overflow-y: scroll;
+height: 90vh;
+top: 1;
+left: 0;
+overflow-x: hidden;
+}
+.mais-vendidos, 
+.lancamentos, 
+.em-breve {
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 92%;
+margin-right: 75px;
+}
+.titulo--botao{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .9375rem;
+    margin-left: .625rem;
+    margin-top: .9375rem;
+    width: 20.3125rem;
+}
+.titulo--botao h2 {
+display: block;
+padding: .3125rem .625rem;
+width: 9.375rem;
+height: auto    ;
+text-align: center;
+word-wrap: break-word;
+}
+.lancamentos .titulo--botao h2{
+display: block;
+width: 7.8125rem;
+}
+.em-breve .titulo--botao h2{
+width: 6.875rem;
+}
+.ver{
+width: 3.125rem;
+padding: .3125rem;
+margin-top: .3125rem;
+}
+
+.mais, .lanca, .breve,.game{
+    width: 100%;
+}
+/* pagina categoria de jogos fim */
+
+/* pagina de comunidade inicio */
+.display-comu{
+    display: flex;
+    width: 650px;
+    height: 80vh;
+    overflow-y: scroll;
+    margin: 1.25rem auto 0 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card-comu:nth-child(1){
+    width: 28.125rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(2){
+    width: 46.875rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(2) img{
+    width: 100%;
+}
+.card-comu:nth-child(2) .print{
+    visibility: visible;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    width: 630px;
+    margin-top: .625rem;
+}
+.card-comu:nth-child(3){
+    width: 34.375rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(4){
+    width: 40.625rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(4) .print{
+    visibility: visible;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    width: 39.375rem;
+    margin-top: .625rem;
+}
+.card-comu:nth-child(5){
+    width: 34.375rem;
+    position: static;
+}
+/* pagina de comunidade fim */
+
+/* pagina de suporte inicio */
+/* input de busca inicio */
+.help{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.help h2{
+    width: 15.625rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.help .search--help{
+    width: 21.875rem;
+}
+#busca--sup{
+    font-size: 1rem;
+    width: 21.875rem;
+}
+/* input de busca inicio */
+
+.sup{
+    width: 43.75rem;
+    height: 21.875rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0;
+    gap: .625rem;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.sup h2{
+    width: 21.875rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: .625rem auto;
+}
+.btn--secao{
+    width: 34.375rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1.25rem;
+    padding: 0 .625rem;
+}
+.secao a:nth-child(1),
+.secao a:nth-child(2),
+.secao a:nth-child(3),
+.secao a:nth-child(4),
+.secao a:nth-child(5),
+.secao a:nth-child(6){
+    display: flex;
+    justify-content: center;
+    padding: .625rem;
+    width: 13.75rem;
+    height: auto;
+    font-size: 1rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* pagina de suporte fim */
+
+/* aside */
+aside{
+    display: flex;
+    position: relative;
+    left: -4.375rem;
+    flex-direction: column;
+    width: 4.375rem;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#pesquisa-loja{
+    display: none;
+}
+.search,
+.search a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: .625rem;
+}
+
+.car a i,
+.lista i,
+.surpresa i,
+.conq i,
+.download i{
+    visibility: visible;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+.car a i{
+    top: -2.1875rem;
+    left: -0.3125rem;
+}
+.lista i{
+    top: -1.875rem;
+    right: -4.6875rem;
+}
+.btn--random{
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    top: -5.625rem;
+}
+.surpresa i{
+    right: -2.0625rem;
+}
+.conq i{
+    right: -3.0625rem;
+    top: -17.8125rem;
+}
+.download i{
+    top: -19.375rem;
+    right: .625rem;
+}
+
+.car a,
+.lista a,
+.surpresa a,
+.surpresa h2,
+.categ h2,
+.link--categ a,
+.conq a,
+.download h2{
+    visibility: hidden;
+
+}
+/* aside fim */
+
+/* footer */
+footer{
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    height: 6.25rem;
+    position: static;
+}
+ .footer--link{
+    font-size: .75rem;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    justify-content: center;
+    width: 100%;
+ }
+/* footer fim */    
+}
+
+/* Media query para telas grandes index */
+@media (min-width: 321px) and (max-width: 425px){
+    /* container */
+    .container--geral{
+        max-width: 425px;
+    }
+
+    /* cabeçalho */
+    header {
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+
+/* titulo */
+    .titulo {
+        margin-left: 0;
+        text-align: center;
+    }
+    .titulo h1{
+        font-size: 1.625rem;
+        text-shadow: 3px 2px 0px rgba( 77, 101, 133, 0.6), 
+        0px 0px 0px var(--branco),
+        4px 6px 0px rgba( 32, 38, 51, 1);
+    }
+
+/* login */
+    .login {
+        width: 100%;
+        margin-right: 0;
+        justify-content: center;
+    }
+    /* barras de navegação */
+/* clicavel inicio*/
+#menu{
+    display: flex;
+    margin: 1.25rem 0 1.25rem 0;
+}
+/* clicavel comunidade inicio */
+#comu--nav{
+    display: flex;
+    width: 100%;
+    margin-top: 1.25rem;
+    justify-content: center;
+}
+/* clicavel comunidade fim */
+
+#barra-navegacao{
+    height: 60vh;
+    width: 18.75rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 999;
+}
+.overlay{
+    position: absolute;
+    top: 1;
+    overflow: hidden;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.336);
+backdrop-filter: blur(5px);
+}
+/* clicavel fim */
+.top-nav {
+display: none;
+flex-direction: column;
+z-index: 999;
+width: 100%;
+height: 50vh;
+position: static;
+padding: 1rem;
+}
+
+.nav-bar-comu:nth-child(1){
+width: 100%;
+border-radius: .625rem;
+}
+/* barras de navegação fim */
+/* main */
+main {
+width: 100%;
+height: 100vh;
+background-image: url(background/swords.png),
+url(background/nebulosa.png);
+}
+/* pagina de login inicio */
+.ini-secao{
+    width: 100%;
+    height: 100vh;
+}
+.top-nav-log{
+display: none;
+flex-direction: column;
+z-index: 999;
+width: 100%;
+height: 50vh;
+position: static;
+padding: 1rem;
+}
+.ini-secao h1{
+    font-size: 2rem;
+    width: 6.25rem;
+    margin: 0;
+    left: 9.375rem;
+    font-variant-caps: all-petite-caps;
+}
+form{
+width: 15.625rem;
+margin-top: 1.25rem;
+}
+.ini-secao 
+form button,
+form label,
+form a{
+width: 13.125rem;
+margin: 0 auto;
+font-weight: 400;
+}
+/* pagina de login fim */
+
+/* pagina de inicio */
+.categ--games {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow-y: scroll;
+    height: 90vh;
+    width: 100%;
+    margin: 0;
+    padding: .625rem;
+    justify-items: center;
+}
+.categ--games img{
+    object-fit: cover;
+    width: 18.75rem;
+}
+.categ--games .indie,
+.categ--games .rpg,
+.categ--games .fps,
+.categ--games .moba{
+    display: flex;
+    padding: .625rem .625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem .9375rem .625rem .9375rem;
+    width: 21.875rem;
+    height: 18.75rem;
+}
+/* pagina de inicio fim */
+
+/* pagina categoria de jogos */
+.container--grid--categ{        
+grid-template-columns: 1fr;
+width: 100%;
+overflow-y: scroll;
+height: 90vh;
+top: 1;
+left: 0;
+overflow-x: hidden;
+}
+.mais-vendidos, 
+.lancamentos, 
+.em-breve {
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+}
+.titulo--botao{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .9375rem;
+    margin-left: .625rem;
+    margin-top: .9375rem;
+    width: 20.3125rem;
+}
+.titulo--botao h2 {
+display: block;
+padding: .3125rem .625rem;
+width: 9.375rem;
+height: auto    ;
+text-align: center;
+word-wrap: break-word;
+}
+.lancamentos .titulo--botao h2{
+display: block;
+width: 7.8125rem;
+}
+.em-breve .titulo--botao h2{
+width: 6.875rem;
+}
+.ver{
+width: 3.125rem;
+padding: .3125rem;
+margin-top: .3125rem;
+}
+
+.mais, .lanca, .breve,.game{
+    width: 100%;
+}
+/* pagina categoria de jogos fim */
+
+/* pagina de comunidade inicio */
+.display-comu{
+    display: flex;
+    width: 21.875rem;
+    height: 80vh;
+    overflow-y: scroll;
+    margin: 1.25rem auto 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card-comu:nth-child(1){
+    width: 21.875rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(2){
+    width: 21.875rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(2) img{
+    width: 100%;
+}
+.card-comu:nth-child(2) .print{
+    visibility: visible;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    width: 20.625rem;
+    margin-top: .625rem;
+}
+.card-comu:nth-child(3){
+    width: 21.875rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(4){
+    width: 21.875rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(4) .print{
+    visibility: visible;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    width: 20.625rem;
+    margin-top: .625rem;
+}
+.card-comu:nth-child(5){
+    width: 21.875rem;
+    position: static;
+}
+/* pagina de comunidade fim */
+
+/* pagina de suporte inicio */
+/* input de busca inicio */
+.help{
+    margin-top: 1.25rem;
+    margin-bottom: .625rem;
+}
+.help h2{
+    width: 15.625rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.help .search--help{
+    width: 21.875rem;
+}
+#busca--sup{
+    font-size: 1rem;
+    width: 16.875rem;
+}
+/* input de busca inicio */
+
+.sup{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1.25rem auto 0 auto;
+    padding: .625rem;
+    width: 100%;
+    height: 64vh;
+    overflow-y: scroll;
+}
+.sup h2{
+    width: 15.625rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: .625rem auto;
+}
+.btn--secao{
+    width: 17.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.secao a:nth-child(1),
+.secao a:nth-child(2),
+.secao a:nth-child(3),
+.secao a:nth-child(4),
+.secao a:nth-child(5),
+.secao a:nth-child(6){
+    display: flex;
+    justify-content: center;
+    padding: .625rem;
+    width: 13.75rem;
+    height: auto;
+    font-size: 1rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* pagina de suporte fim */
+
+/* aside */
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.car,
+.lista,
+.surpresa,
+.categ,
+.link--categ,
+.conq,
+.download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* aside fim */
+
+/* footer */
+footer{
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    height: 6.25rem;
+    position: static;
+}
+ .footer--link{
+    font-size: .75rem;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    justify-content: center;
+    width: 100%;
+ }
+/* footer fim */    
+}
+
+/* Media query para telas medias index */
+@media (min-width: 321px) and (max-width: 375px){
+    /* container */
+    .container--geral{
+        max-width: 100%;
+    }
+
+    /* cabeçalho */
+    header {
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+
+/* titulo */
+    .titulo {
+        margin-left: 0;
+        text-align: center;
+    }
+    .titulo h1{
+        font-size: 1.625rem;
+        text-shadow: 3px 2px 0px rgba( 77, 101, 133, 0.6), 
+        0px 0px 0px var(--branco),
+        4px 6px 0px rgba( 32, 38, 51, 1);
+    }
+
+/* login */
+    .login {
+        width: 100%;
+        margin-right: 0;
+        justify-content: center;
+    }
+    /* barras de navegação */
+/* clicavel inicio*/
+#menu{
+    display: flex;
+    margin: 1.25rem 0 1.25rem 0;
+}
+/* clicavel comunidade inicio */
+#comu--nav{
+    display: flex;
+    width: 100%;
+    margin-top: 1.25rem;
+    justify-content: center;
+}
+/* clicavel comunidade fim */
+
+#barra-navegacao{
+    height: 50vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 999;
+}
+.overlay{
+    position: absolute;
+    top: 1;
+    overflow: hidden;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.336);
+backdrop-filter: blur(5px);
+}
+/* clicavel fim */
+.top-nav {
+display: none;
+flex-direction: column;
+z-index: 999;
+width: 100%;
+height: 50vh;
+position: static;
+padding: 1rem;
+}
+
+.nav-bar-comu:nth-child(1){
+width: 100%;
+border-radius: .625rem;
+}
+/* barras de navegação fim */
+/* main */
+main {
+width: 100%;
+height: 100vh;
+background-image: url(background/swords.png),
+url(background/nebulosa.png);
+}
+/* pagina de login inicio */
+.ini-secao{
+    width: 100%;
+    height: 100vh;
+}
+.top-nav-log{
+display: none;
+flex-direction: column;
+z-index: 999;
+width: 89.4%;
+height: 50vh;
+position: static;
+padding: 1rem;
+}
+.ini-secao h1{
+    font-size: 2rem;
+    width: 6.25rem;
+    margin: 0;
+    left: 6.875rem;
+    font-variant-caps: all-petite-caps;
+}
+form{
+width: 15.625rem;
+margin-top: 1.25rem;
+}
+.ini-secao 
+form button,
+form label,
+form a{
+width: 13.125rem;
+margin: 0 auto;
+font-weight: 400;
+}
+/* pagina de login fim */
+
+/* pagina de inicio */
+.categ--games {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow-y: scroll;
+    height: 90vh;
+    width: 100%;
+    /* margin: 0 0 0 35px; */
+    padding: .625rem;
+    justify-items: center;
+}
+.categ--games img{
+    object-fit: cover;
+    width: 15.625rem;
+}
+.categ--games .indie,
+.categ--games .rpg,
+.categ--games .fps,
+.categ--games .moba{
+    display: flex;
+    padding: .625rem .625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem 0 0 0;
+    width: 18.125rem;
+    height: 17.5rem;
+}
+/* pagina de inicio fim */
+
+/* pagina categoria de jogos */
+.container--grid--categ{
+    grid-template-columns: 1fr;
+    width: 100%;overflow-y: 
+    scroll;height: 90vh;
+    overflow-x: hidden;
+    top: 9.375rem;
+}
+.container--grid--categ::-webkit-scrollbar {
+    width: 0;
+}
+.mais-vendidos, 
+.lancamentos, 
+.em-breve {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.titulo--botao{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .9375rem;
+    margin-left: .625rem;
+    margin-top: .9375rem;
+    width: 20.3125rem;
+}
+.titulo--botao h2 {
+display: block;
+padding: .3125rem .625rem;
+width: 9.375rem;
+height: auto    ;
+text-align: center;
+word-wrap: break-word;
+}
+.lancamentos .titulo--botao h2{
+display: block;
+width: 7.8125rem;
+}
+.em-breve .titulo--botao h2{
+width: 6.875rem;
+}
+.ver{
+width: 3.125rem;
+padding: .3125rem;
+margin-top: .3125rem;
+}
+.game{
+    width: 100%;
+}
+
+
+/* pagina categoria de jogos fim */
+
+/* pagina de comunidade inicio */
+.display-comu{
+    display: flex;
+    width: 320px;
+    height: 80vh;
+    overflow-y: scroll;
+    margin: 1.25rem auto 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.display-comu::-webkit-scrollbar {
+    width: 0 !important 
+}
+.card-comu:nth-child(1){
+    width: 16.875rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(2){
+    width: 16.875rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(2) img{
+    width: 100%;
+}
+.card-comu:nth-child(2) .print{
+    visibility: visible;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    width: 16.875rem;
+    margin-top: .625rem;
+}
+.card-comu:nth-child(3){
+    width: 16.875rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(4){
+    width: 16.875rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(4) .print{
+    visibility: visible;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    width: 16.875rem;
+    margin-top: .625rem;
+}
+.card-comu:nth-child(5){
+    width: 16.875rem;
+    position: static;
+}
+/* pagina de comunidade fim */
+
+/* pagina de suporte inicio */
+/* input de busca inicio */
+.help{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.help h2{
+    width: 15.625rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.help .search--help{
+    width: 17.5rem;
+}
+#busca--sup{
+    font-size: 1rem;
+    width: 15.625rem;
+}
+/* input de busca inicio */
+
+.sup{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1.25rem auto 0 auto;
+    padding: .625rem;
+    width: 18.75rem;
+    height: 64vh;
+    overflow-y: scroll;
+}
+.sup h2{
+    width: 15.625rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: .625rem auto;
+}
+.btn--secao{
+    width: 17.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.secao a:nth-child(1),
+.secao a:nth-child(2),
+.secao a:nth-child(3),
+.secao a:nth-child(4),
+.secao a:nth-child(5),
+.secao a:nth-child(6){
+    display: flex;
+    justify-content: center;
+    padding: .625rem;
+    width: 13.75rem;
+    height: auto;
+    font-size: 1rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* pagina de suporte fim */
+
+/* aside */
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.car,
+.lista,
+.surpresa,
+.categ,
+.link--categ,
+.conq,
+.download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* aside fim */
+
+/* footer */
+footer{
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    height: 6.25rem;
+    position: static;
+}
+ .footer--link{
+    font-size: .75rem;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    justify-content: center;
+    width: 100%;
+ }
+/* footer fim */    
+}
+
+/* Media query para telas pequenas*/
+@media (max-width: 320px) {
+    /* container */
+    .container--geral{
+        max-width: 100%;
+    }
+
+    /* cabeçalho */
+    header {
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+
+/* titulo */
+    .titulo {
+        margin-left: 0;
+        text-align: center;
+    }
+    .titulo h1{
+        font-size: 1.625rem;
+        text-shadow: 3px 2px 0px rgba( 77, 101, 133, 0.6), 
+        0px 0px 0px var(--branco),
+        4px 6px 0px rgba( 32, 38, 51, 1);
+    }
+
+/* login */
+    .login {
+        width: 100%;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+/* barras de navegação */
+/* clicavel inicio*/
+    #menu{
+        display: flex;
+        margin: 1.25rem 0 1.25rem 0;
+    }
+/* clicavel comunidade inicio */
+    #comu--nav{
+        display: flex;
+        width: 100%;
+        margin-top: 1.25rem;
+        justify-content: center;
+    }
+/* clicavel comunidade fim */
+
+    #barra-navegacao{
+        height: 50vh;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 999;
+    }
+    .overlay{
+        position: absolute;
+        top: 1;
+        overflow: hidden;
+        z-index: 1;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.336);
+    backdrop-filter: blur(5px);
+    }
+/* clicavel fim */
+
+    .top-nav {
+        display: none;
+        flex-direction: column;
+        z-index: 999;
+        width: 100%;
+        height: 50vh;
+        position: static;
+        padding: 1rem;
+    }
+
+    .nav-bar-comu:nth-child(1){
+        width: 100%;
+        border-radius: .625rem;
+    }
+/* barras de navegação fim */
+
+/* main */
+    main {
+        width: 100%;
+        height: 100vh;
+        background-image: url(background/swords.png),
+        url(background/nebulosa.png);
+    }
+
+    /* pagina de login inicio */
+    .ini-secao{
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+    .top-nav-log{
+        display: none;
+        flex-direction: column;
+        z-index: 999;
+        width: 100%;
+        height: 50vh;
+        position: static;
+        padding: 1rem;
+    }
+    .ini{
+        width: 100%;
+        font-size: 2rem;
+        left: 5px;
+        font-weight: 400;
+        margin: 0;
+        text-align: center;
+        font-variant-caps: all-petite-caps;
+    }
+    form{
+        width: 15.625rem;
+        margin-top: 3.125rem;
+    }
+    .ini-secao form button,
+    form label,
+    form a{
+        width: 13.125rem;
+        margin: 0 auto;
+        font-weight: 400;
+    }
+    /* pagina de login fim */
+
+  /* pagina de inicio */
+    .categ--games {
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow-y: scroll;
+        height: 90vh;
+        width: 100%;
+        margin: 0 .9375rem 0 0;
+        padding: 1.25rem;
+        justify-items: center;
+    }
+    .categ--games img{
+        object-fit: cover;
+        width: 12.5rem;
+    }
+    .categ--games .indie,
+    .categ--games .rpg,
+    .categ--games .fps,
+    .categ--games .moba{
+        display: flex;
+        padding: .625rem .625rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1.25rem .625rem .625rem .625rem;
+        width: 250px;
+        height: 15.625rem;
+    }
+/* pagina de inicio fim */
+
+/* pagina categoria de jogos */
+.container--grid--categ{        
+    grid-template-columns: 1fr;
+    width: 100%;
+    overflow-y: scroll;
+    height: 90vh;
+    top: 1;
+    left: 0;
+    overflow-x: hidden;
+}
+.container--grid--categ::-webkit-scrollbar {
+    width: 0 !important 
+}
+.mais-vendidos, .lancamentos, .em-breve {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo--botao{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .9375rem;
+    margin-left: .625rem;
+    margin-top: 1.25rem;
+    width: 16.875rem;
+}
+.titulo--botao h2 {
+    display: block;
+    padding: .3125rem .625rem;
+    width: 9.375rem;
+    height: auto;
+    text-align: center;
+    word-wrap: break-word;
+}
+.lancamentos .titulo--botao h2{
+    display: block;
+    width: 7.8125rem;
+}
+.em-breve .titulo--botao h2{
+    width: 6.875rem;
+}
+.ver{
+    width: 3.125rem;
+    padding: .3125rem;
+    margin-top: .3125rem;
+}
+/* pagina categoria de jogos fim */
+
+/* pagina de comunidade inicio */
+.display-comu{
+    display: flex;
+    width: 270px;
+    height: 80vh;
+    overflow-y: scroll;
+    margin: 1.25rem auto 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.display-comu::-webkit-scrollbar {
+    width: 0 !important 
+}
+.card-comu:nth-child(1){
+    width: 14.375rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(2){
+    width: 14.375rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(2) .print{
+    visibility: visible;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    width: 14.375rem;
+    margin-top: .625rem;
+}
+.card-comu:nth-child(3){
+    width: 14.375rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(4){
+    width: 14.375rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+.card-comu:nth-child(4) .print{
+    visibility: visible;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    width: 14.375rem;
+    margin-top: .625rem;
+}
+.card-comu:nth-child(5){
+    width: 14.375rem;
+    position: static;
+    margin: .9375rem .625rem;
+}
+/* pagina de comunidade fim */
+
+/* pagina de suporte inicio */
+/* input de busca inicio */
+    .help{
+        margin-top: 1.25rem;
+        margin-bottom: .625rem;
+    }
+    .help h2{
+        width: 15.625rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .help .search--help{
+        width: 15.625rem;
+    }
+    #busca--sup{
+        font-size: 1rem;
+        width: 12.5rem;
+    }
+/* input de busca inicio */
+
+    .sup{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1.25rem auto 0 auto;
+        padding: .625rem;
+        width: 100%;
+        height: 64vh;
+        overflow-y: scroll;
+    }
+    .sup h2{
+        width: 15.625rem;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: .625rem auto;
+    }
+    .btn--secao{
+        width: 17.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .secao a:nth-child(1),
+    .secao a:nth-child(2),
+    .secao a:nth-child(3),
+    .secao a:nth-child(4),
+    .secao a:nth-child(5),
+    .secao a:nth-child(6){
+        display: flex;
+        justify-content: center;
+        padding: .625rem;
+        width: 13.75rem;
+        height: auto;
+        font-size: 1rem;
+        align-items: center;
+        flex-direction: row;
+    }
+   
+/* pagina de suporte fim */
+
+/* aside */
+    aside{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    .car,
+    .lista,
+    .surpresa,
+    .categ,
+    .link--categ,
+    .conq,
+    .download{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+/* aside fim */
+
+/* footer */
+    footer{
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+        height: 6.25rem;
+        position: static;
+    }
+     .footer--link{
+        font-size: .75rem;
+        display: flex;
+        flex-direction: column;
+        position: static;
+        justify-content: center;
+        width: 100%;
+     }
+/* footer fim */    
+}

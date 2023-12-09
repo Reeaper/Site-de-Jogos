@@ -1,0 +1,206 @@
+<!-- Início do documento HTML -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons/icons8-capybara-50.ico" type="image/x-icon">
+    <!-- Links para folhas de estilo -->
+    <link rel="stylesheet" href="css/style_teste.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/media_query.css">
+    <script src="js/menu.js" defer></script>
+    <script src="assets/icons/fontawesome.js" defer></script>
+    <!-- Pré-carregamento de fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <!-- Título da página -->
+    <title>NEBULA SWORD</title>
+    <style>
+        .top-nav a:nth-child(3){
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding-right: .3125rem;
+    width: 10.9375rem;
+    height: 1.75rem;
+    border: 1px solid var(--borda-trans);
+    border-radius: .625rem;
+    background-color: rgba(217, 217, 217, .7);
+}
+    </style>
+</head>
+
+<body>
+    <!-- Conteúdo principal -->
+    <div class="container--geral">
+        <header>
+            <!-- Título do site -->
+            <div class="titulo">
+                <h1>NEBULA SWORD</h1>
+            </div>
+            <!-- Links de login -->
+            <div class="login">
+                <i class="fa-solid fa-user-astronaut fa-lg" style="color: #ffffff;"></i>
+                <a href="secao.html">INICIAR SESSÃO</a>
+            </div>
+        </header>
+        <!-- Conteúdo do corpo da página -->
+        <main>
+            <div id="menu">
+                <i class="fa-solid fa-dungeon fa-lg" style="color: #ffffff;"></i>
+            </div>
+            <div class="overlay"></div>
+
+            <div id="comu--nav">
+                <i class="fa-solid fa-dice-d20 fa-lg" style="color: #ffffff;"></i>
+            </div>
+            <div class="overlay"></div>
+            <!-- Navegação superior -->
+            <nav class="top-nav">
+                <!-- Links de navegação -->
+                <a href="index.html">
+                    <h2 class="top">Início</h2>
+                </a>
+                <a href="categorias.html">
+                    <h2 class="top">Categorias</h2>
+                </a>
+                <a href="comunidade.html">
+                    <h2 class="top">Comunidade</h2>
+                </a>
+                <a href="suporte.html">
+                    <h2 class="top">Suporte</h2>
+                </a>
+            </nav>
+           
+            <!-- Comunidade -->
+            <!-- barra de navegaçao inicio -->
+            
+            <section id="barra-navegacao"> 
+                <a class="nav-bar-comu" href="">
+                    <h3>TUDO</h3>
+                </a>
+
+                <a class="nav-bar-comu" href="">
+                    <h3>ARTE</h3>
+                </a>
+
+                <a class="nav-bar-comu" href="">
+                    <h3>TRANSMISSÕES</h3>
+                </a>
+
+                <a class="nav-bar-comu" href="">
+                    <h3>ANALISES</h3>
+                </a>
+
+                <a class="nav-bar-comu" href="">
+                    <h3>NOTICIAS</h3>
+                </a>
+            </section>
+            <div class="display-comu">
+                <div class="card-comu">
+                    <h3><i class="fa-regular fa-thumbs-up" style="color: #ffffff;"></i>   Recomendado</h3>
+                            <h4>7 horas registradas</h4>
+                               <h4>
+                                   Gostei e é isso
+                                   sem necessidade de uma opnião mto formulada
+                               </h4>
+                </div>
+                <div class="card-comu">
+                        <div class="print">
+                            <h3>The Evil Within:Captura de tela</h3>
+                        </div>
+                        <img src="assets/categ-game/print.jpeg" alt="">      
+                </div>
+                <div class="card-comu">
+                        <h4><img src="assets/icon-users/download.jpeg" alt="">
+                            Muse Dash: Guia</h4>
+                            <h4>Otimização do Muse Dash para PC fraco (PT-BR).</h4>
+                            <h4>Essas configurações são principalmente para pessoas com computadores de baixo custo, portanto, se você tiver um PC de última geração, provavelmente não notará nenhuma diferença.</h4>
+                </div>
+                <div class="card-comu">
+                            <div class="print">
+                                <h3>The Callisto Protocol: Captura de tela</h3>
+                            </div>
+                            <img src="assets/categ-game/calisto.jpeg" alt="">
+                </div>
+                <div class="card-comu">
+                    <h3><i class="fa-regular fa-thumbs-up" style="color: #ffffff;"></i>   Recomendado</h3>
+                            <h4>59 horas registradas</h4>
+                               <h4>
+                                   Jogo casual,bom pra matar tempo e relaxar com os amigos
+                               </h4>
+                </div>
+            </div>
+            <!-- barra de navegaçao fim -->
+            <!-- Barra lateral -->
+            <aside>
+                <!-- Barra de pesquisa -->
+                <div class="search">
+                    <input type="text" id="pesquisa-loja" placeholder="Buscar" autocomplete="off">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    </a>
+                </div>
+                <!-- Carrinho de compras -->
+                <div class="car">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-plus" style="color: #ffffff;"></i>
+                         CARRINHO
+                    </a>
+                </div>
+                <!-- Lista de desejos -->
+                <div class="lista">
+                    <i class="fa-solid fa-heart" style="color: #ffffff;"></i>                    <a href="">LISTA DE DESEJOS</a>
+                </div>
+                <!-- Link "Surpreenda-me" -->
+                <div class="surpresa">
+                    <h2>SURPREENDA-ME</h2>
+                    <div class="btn--random">
+                        <a href="#">
+                            <i class="fa-solid fa-dice-five fa-2xl" style="color: #ffffff;"></i>                            <h2>RANDOM</h2>
+                        </a>
+                    </div>
+                </div>
+                <!-- Categorias -->
+                <div class="categ">
+                    <h2>CATEGORIAS</h2>
+                    <div class="link--categ">
+                        <a href="#">MAIS VENDIDOS</a>
+                        <a href="#">LANÇAMENTOS</a>
+                        <a href="#">EM BREVE</a>
+                        <a href="#">OFERTAS</a>
+                    </div>
+                </div>
+                <!-- Conquistas -->
+                <div class="conq">
+                    <a href="#">
+                        <i class="fa-solid fa-khanda" style="color: #ffffff;"></i>
+                         CONQUISTAS
+                    </a>
+                </div>
+                <!-- Link para download do jogo -->
+                <div class="download">
+                    <a href="#">
+                        <h2>BAIXE</h2>
+                        <h2><i class="fa-solid fa-reply fa-rotate-270" style="color: #ffffff;"></i>          
+                        NEBULA SWORD</h2>
+                    </a>
+                </div>
+            </aside>
+        </main>
+        <!-- Rodapé -->
+        <footer>
+            <div class="footer--link">
+                <a class="direitos" href="">© 2023 AkRp.</a>
+                <a class="direitos" href="">Todos os direitos reservados.</a>
+                <a class="direitos" href="">Todas as marcas são propriedade dos seus respectivos donos no Brasil e em outros países.</a>
+                <a class="direitos" href="">IVA incluso em todos os preços onde aplicável.</a>
+                <a class="direitos" href="#">Política de Privacidade</a>
+            </div>
+        </footer>

@@ -1,0 +1,12 @@
+
+main{
+    display: grid;
+    grid-template-areas:
+    "mais lança breve"
+    "mais lança breve "
+    "mais lança breve ";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
+
